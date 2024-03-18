@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;  
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 3% 0;
+    font-size: 4rem;
+    color: #FF5733; 
+}
+
+#textoEntrada{
+    width: 90%;
+    height: 40vh;
+    border-radius: 10px;
+    border: 2px solid #FF5733; 
+    margin-top: 2%;
+    font-size: 2rem;
+    resize: none;
+    padding: 1rem;
+}
+
+.contenidoBotones{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #FF5733; 
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.botonVerde{
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.botonVerde:hover{
+    background-color: #45a049; 
+}
+
+.botonBlanco{
+    background-color: white;
+}
+
+.botonBlanco:hover{
+    background-color: #f1f1f1; 
+}
+
+.containerEntrada{
+    background-color: #F9EBEA; 
+    width: 80%;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 3% 0;
+}
+
+.contenido{
+    margin: 2% 0;
+}
+
+.contenido>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+.containerResultado{
+    background-color: #85C1E9; 
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 3% 0;
+}
+
+#campoEnBlanco>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#campoEnBlanco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    color: #FF5733;
+}
+
+#campoResultado{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoResultado{
+    resize: none;
+    height: 40vh;
+    margin-bottom: 5%;
+    background-color: white;
+    border: 2px solid #FF5733; 
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #2C3E50;}
+
+.texto{
+    font-size: 1.3rem;
+    color: #FF5733;
+}
+
+
+footer{
+    background-color: #34495E;
+    color: white;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer>p {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: #FF5733; 
+}

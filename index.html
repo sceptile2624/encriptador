@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Challenge One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="containerEntrada">
+            <h1>Encriptador</h1>
+            <!-- seccion mensaje entrada -->
+            <div class="contenido">
+                <div class="">
+                    <p class="texto">Solo letras minúsculas y sin acentos</p>
+                    <!-- texto a encriptar/desencriptar -->
+                    <textarea required="" pattern="[0-9]" autocapitalize="none" id="textoEntrada" placeholder="Ingresa el texto aqui" onkeypress="restricciones()"></textarea>
+                </div>
+                <!-- seccion botones -->
+                <div class="contenidoBotones">
+                    <button class="boton botonVerde" onclick="verificarTexto();" id="encriptar">Encriptar</button>
+                    <button class="boton botonBlanco" onclick="desencriptar()" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <!-- seccion de mensaje respuesta -->
+        <div class="containerResultado">
+            <div class="contenido contenidoResultado">
+                <div id="campoResultado">
+                    <textarea name="textoResultado" readonly id="textoResultado"></textarea>
+                    <input type="button" class="boton botonBlanco" onclick="copiarTexto()" id="copiar" value="Copiar">
+                </div>
+                <div id="campoEnBlanco">
+                    <img src="img/detective.jpg" alt="imagen referente a la criptografia">
+                    <h2 class="">Ningún mensaje fue encontrado</h2>
+                    <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="texto">Sitio desarrollado por <a href="https://github.com/sceptile2624"
+                target="_blank" rel="noopener noreferrer">Fernando Ramirez Gonzalez</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
